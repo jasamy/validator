@@ -6,9 +6,9 @@ namespace Jasamy;
  * A data validation class
  *
  */
-class Validator
+class Validator_C
 {
-    public function validate()
+    public function validate_f()
     {
         return 'Validated!';
     }
