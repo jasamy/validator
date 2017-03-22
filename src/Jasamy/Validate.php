@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasamy\Validator;
+namespace Jasamy;
 
 /**
  * A data validation class
