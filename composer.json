@@ -1,0 +1,8 @@
+{
+    "name": "jasamy/validator",
+    "autoload": {
+        "psr-0" : {
+            "Jasamy\\Validator" : "src"
+        }
+    }
+}
