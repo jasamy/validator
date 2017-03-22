@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleValidator\Validators;
+namespace Jasamy\Validators;
 
 class Alpha extends Base
 {
