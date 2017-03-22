@@ -10,7 +10,7 @@ Example Usage
 -------------
 
 ```php
-use Jasamy\Validator;
+use Jasamy\Validate;
 use Jasamy\Validators;
 
 $data = array(
