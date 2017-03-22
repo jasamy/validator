@@ -6,7 +6,7 @@ namespace Jasamy;
  * A data validation class
  *
  */
-class Validate
+class Validator
 {
     public function validate()
     {
