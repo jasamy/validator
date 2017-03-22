@@ -10,6 +10,6 @@ class Validate
 {
     public function validate()
     {
-        return 'Validate!';
+        return 'Validated!';
     }
 }
