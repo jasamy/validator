@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleValidator\Validators;
+namespace Jasamay\Validators;
 
 class Length extends Base
 {
