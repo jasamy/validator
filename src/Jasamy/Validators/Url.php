@@ -8,9 +8,8 @@ class Url extends Base
     {
         if ($this->isFieldNotEmpty($data)) {
             
-            if (filter_var($data, FILTER_VALIDATE_URL) === false) {
-                return false;
-            }
+            return filter_var($data[$this->field], FILTER_VALIDATE_URL);
+
         }
 
         return true;
