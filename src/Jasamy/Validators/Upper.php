@@ -8,9 +8,8 @@ class Upper extends Base
     {
         if ($this->isFieldNotEmpty($data)) {
             
-            if (ctype_upper($data) === false) {
-                return false;
-            }
+            return ctype_upper($data[$this->field]);
+            
         }
 
         return true;
