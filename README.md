@@ -9,6 +9,8 @@ Simple library to validate user data (forms).
 Example Usage
 -------------
 
+Users define the rules for their fields as well as error messages.
+
 ```php
 use Jasamy\Validate;
 use Jasamy\Validators;
@@ -18,7 +20,8 @@ $data = array(
     'url' => 'http://www.google.com',
     'country' => 'UK',
     'string' => 'test string length',
-    'password' => 'abcdE904');
+    'password' => 'abcdE904'
+    );
 
 $validate = new Validate($data, array(
             new Validators\Email('email', 'must be an email address'),
@@ -86,7 +89,7 @@ Allow only valid urls.
 Extensibility
 -------------
 
-The library is extensible via the Base Class, eg.
+The library is extensible via the Base Class, for example the following class creates a required field rule.
 
 ```php
 
