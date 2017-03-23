@@ -12,11 +12,10 @@ class AlphaValidatorTest extends PHPUnit_Framework_TestCase
 
         $this->assertEquals($message, $v->getErrorMessage());
 
-        $this->assertFalse($v->execute(array('field' => 'abc')));
         $this->assertFalse($v->execute(array('field' => 'A123')));
         $this->assertFalse($v->execute(array('field' => 'a123')));
         $this->assertFalse($v->execute(array('field' => null)));
-
+        $this->assertTrue($v->execute(array('field' => 'abc')));
         $this->assertTrue($v->execute(array('field' => 'ABC')));
     }
 }
