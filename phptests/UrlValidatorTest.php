@@ -14,8 +14,7 @@ class UrlValidatorTest extends PHPUnit_Framework_TestCase
 
         $this->assertFalse($v->execute(array('field' => 'google.com')));
         $this->assertFalse($v->execute(array('field' => 'www.google.com')));
-        $this->assertFalse($v->execute(array('field' => null)));
-
+        $this->assertTrue($v->execute(array('field' => null)));
         $this->assertTrue($v->execute(array('field' => 'http://www.google.com')));
         $this->assertTrue($v->execute(array('field' => 'https://www.google.com')));
         $this->assertTrue($v->execute(array('field' => 'http://google.com')));
