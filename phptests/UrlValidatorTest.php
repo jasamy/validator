@@ -8,7 +8,7 @@ class UrlValidatorTest extends PHPUnit_Framework_TestCase
     {
         $message = 'not a valid url';
 
-        $v = new Alpha('field', $message);
+        $v = new Url('field', $message);
 
         $this->assertEquals($message, $v->getErrorMessage());
 
