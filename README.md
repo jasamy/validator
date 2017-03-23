@@ -82,3 +82,19 @@ Allow only valid urls.
 
     new Validators\Url($field, $error_message);
 
+
+Extensibility
+-------------
+
+The library is extensible via the Base Class, eg.
+
+```php
+
+class Required extends Validators\Base
+{
+    public function execute(array $data)
+    {
+        return $this->isFieldNotEmpty($data);
+    }
+}
+```
